@@ -10,3 +10,14 @@ This script extends `dual_beam_scanning_plotting.m` to a higher number of beams,
 
 For both the above scripts, the variable `scenefile` can be set to either `"env.stl"` for the indoor environment or `"env_outdoor.stl"`
 
+
+## tracking.m: 
+
+Orignal test simulation. This was where the orignal tracking was implemented. This simulation contains 2 paths (1 LOS, 1 Reflected path). Output plots show the first algorithm implementation's angle calculations/tracking. Also compares SNR of multi-beam (2 beam) tracking and single beam tracking
+
+## py_mm_test.py 
+
+Implements a multipath environment (max 4 constructive paths). In additon, it implements the power loss inference target tracking algorithm. It also incorporates the optimal beam forming algorithm. A general path loss of 78.29 db is applied to the paths. Output plots provide a comparison of single beam and multibeam tracking/SNR with simulated blockages. Also provides a polar plot showing the optimal beam forming.
+
+Running python 3.14.2
+required packages: numpy, matplotlib, pandas
