@@ -37,10 +37,10 @@ tx = txsite('cartesian', ...
 
 rx = rxsite('cartesian', ...
     'AntennaPosition', rxPos);
-% 
-% sv = siteviewer(SceneModel=sceneFile); 
-% show(tx);
-% show(rx);
+ 
+sv = siteviewer(SceneModel=sceneFile); 
+show(tx);
+show(rx);
 
 pm = propagationModel("raytracing", ...
     "CoordinateSystem", "cartesian", ... 
@@ -53,7 +53,7 @@ rays = raytrace(tx, rx, pm, "Map", sceneFile);
 %% Ray trace Channel Anaysis
 
 if ~isempty(rays{1})
-    % plot(rays{1});
+    plot(rays{1});
 else
     warning('No rays found...');
 end
@@ -128,11 +128,11 @@ fprintf('Gain Improvement from Combining 2 Beams: +%.2f dB\n', gainIncrease_dB);
 fprintf('Best Constructive Beams: Ray %d (A) and Ray %d (B)\n', bestBeamPair(1), bestBeamPair(2));
 fprintf('------------------------------------------------\n');
 
-% sv2 = siteviewer(SceneModel=sceneFile); 
-% show(tx);
-% show(rx);
+sv2 = siteviewer(SceneModel=sceneFile); 
+show(tx);
+show(rx);
 
-% plot([bestRayA, bestRayB]);
+plot([bestRayA, bestRayB]);
 
 %% Practical anglaysis
 
