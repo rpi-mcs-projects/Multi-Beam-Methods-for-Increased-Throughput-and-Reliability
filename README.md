@@ -8,5 +8,5 @@ A phased array is steered towards the two optimal constructive channels and the 
 ## n_beam_comparison.m
 This script extends `dual_beam_scanning_plotting.m` to a higher number of beams, and sweeps across the number of beams. Then the SNR is plotted across number of beams.
 
-For both the above scripts, the variable `scenefile` can be set to either "`env.stl`" for the indoor environment or "`env_outdoor.stl`"
+For both the above scripts, the variable `scenefile` can be set to either `"env.stl"` for the indoor environment or `"env_outdoor.stl"`
 
