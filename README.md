@@ -1,5 +1,7 @@
 # Multi-Beam-Methods-for-Increased-Throughput-and-Reliability
 
+This is the final project code for Jamie Draper and Edgar Muniz for Modern Communication Systems Fall 2025
+
 ## dual_beam_scanning_plotting.m
 This MATLAB file can be run with the phased array and 5G toolboxes and the two STL 3D model files provided in the repository. This script simulates the multipath profile of the 3D environment and searches for the two most constructive paths. The multipath profiles are visualized. 
 
